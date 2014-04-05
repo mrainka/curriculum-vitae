@@ -1,5 +1,10 @@
-all:
-	pdflatex CurriculumVitae.tex
-	
+all: en pl
+
+en:
+	pdflatex CurriculumVitaeEN.tex
+
+pl:
+	pdflatex CurriculumVitaePL.tex
+
 clean:
-	rm -rf CurriculumVitae.aux CurriculumVitae.dvi CurriculumVitae.log CurriculumVitae.out
+	rm -rf *.aux *.dvi *.log *.out *.pdf
