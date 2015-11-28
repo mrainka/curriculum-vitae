@@ -1,0 +1,3 @@
+To install dependencies type the following command:
+
+sudo xargs -a requirements.txt apt-get install
