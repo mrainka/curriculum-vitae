@@ -7,4 +7,4 @@ pl:
 	pdflatex CurriculumVitaePL.tex
 
 clean:
-	rm -rf *.aux *.dvi *.log *.out *.pdf
+	rm -rf *.aux *.dvi *.log *.out
