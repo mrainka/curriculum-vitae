@@ -1,40 +1,41 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage{fullpage,graphicx,hyperref}
+\usepackage{geometry}
+\usepackage{graphicx, hyperref}
+\usepackage[export]{adjustbox}
 \usepackage[USenglish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[usenames,dvipsnames]{color}
 
-\addtolength{\topmargin}{-0.5in}
-\addtolength{\textheight}{1in}
+\geometry{left=1.5cm, top=0.9cm, right=1.5cm, bottom=1.5cm}
 
 \hypersetup{colorlinks=true,urlcolor=blue}
 
 \begin{document}
     \pagestyle{empty}
-  
-    \noindent
-    \begin{minipage}[b]{0.4\textwidth}
-        \begin{center}
-            \includegraphics{photo.png}
-        \end{center}
-    \end{minipage}
-    \begin{minipage}[b]{0.6\textwidth}
-        {\Huge \sc Marcin Rainka}
-        \begin{description} \itemsep2pt \parskip0pt \parsep0pt
-            \item[Address] Bitwy pod Płowcami st. 64, 81-731 Sopot
-            \item[Date of birth] 1st December 1989
-            \item[Phone number] (+48) 505 464 392
-            \item[Email] \href{mailto:marcin.rainka@gmail.com}{marcin.rainka@gmail.com}
-            \item[Website] \url{https://inf.ug.edu.pl/~mrainka/}
-        \end{description}
-    \end{minipage}
-  
-    \vspace{0.1cm}
-  
-    \noindent\rule{\textwidth}{0.4pt}
-  
+
+    \begin{center}
+        \begin{minipage}[b]{3cm}
+            \includegraphics[scale=0.28, right]{photo.png}
+        \end{minipage}
+        \hspace{0.2cm}
+        \begin{minipage}[b]{7cm}
+            {\Large \sc Marcin Rainka}
+            \begin{description} \itemsep1pt \parskip0pt \parsep0pt
+                \item[Address] PCK st. 7/80, 81-621 Gdynia
+                \item[Date of birth] 1st December 1989
+                \item[Phone number] (+48) 505 464 392
+                \item[E-mail] \href{mailto:marcin.rainka@gmail.com}{marcin.rainka@gmail.com}
+                \item[LinkedIn] \href{https://linkedin.com/in/marcinrainka}{https://linkedin.com/in/marcinrainka}
+            \end{description}
+        \end{minipage}
+    \end{center}
+
+    \vspace{-0.4cm}
+
+    \noindent\rule{\textwidth}{0.1mm}
+
     %==================== PROFILE AND OBJECTIVE ====================================================
   
     \vspace{0.4cm}
