@@ -1,40 +1,47 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage{geometry}
-\usepackage{graphicx, hyperref}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand*\header[1]{
+    \noindent\raisebox{.1cm}{\color{MidnightBlue}\rule{1.5cm}{.1cm}\hspace{.2cm}\raisebox{-.1cm}{\large\bf #1}}}
+
 \usepackage[export]{adjustbox}
-\usepackage[USenglish]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
 \usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
 
-\geometry{left=1.5cm, top=0.9cm, right=1.5cm, bottom=1.5cm}
+\geometry{left=1.5cm, top=.9cm, right=1.5cm, bottom=1.5cm}
 
-\hypersetup{colorlinks=true,urlcolor=blue}
+\hypersetup{colorlinks=true,urlcolor=RoyalBlue}
 
 \begin{document}
     \pagestyle{empty}
 
     \begin{center}
         \begin{minipage}[b]{3cm}
-            \includegraphics[scale=0.28, right]{photo.png}
+            \includegraphics[scale=.28, right]{photo.png}
         \end{minipage}
-        \hspace{0.2cm}
-        \begin{minipage}[b]{7cm}
-            {\Large \sc Marcin Rainka}
-            \begin{description} \itemsep1pt \parskip0pt \parsep0pt
+        \hspace{.1cm}{\color{Gray}\rule{.5mm}{4cm}}\hspace{.38cm}
+        \raisebox{.3cm}{\begin{minipage}[b]{7cm}
+            {\LARGE\bf Marcin Rainka}
+            \begin{description} \itemsep.6mm \parskip0mm \parsep0mm
                 \item[Address] \mbox{Reymonta 15C/9, 80-290 Gdańsk}
                 \item[Date of birth] 1st December 1989
                 \item[Phone number] (+48) 505 464 392
                 \item[E-mail] \href{mailto:marcin.rainka@gmail.com}{marcin.rainka@gmail.com}
                 \item[LinkedIn] \href{https://linkedin.com/in/marcinrainka}{https://linkedin.com/in/marcinrainka}
             \end{description}
-        \end{minipage}
+        \end{minipage}}
     \end{center}
 
-    \vspace{-0.4cm}
+    \vspace{-.4cm}
 
-    \noindent\rule{\textwidth}{0.1mm}
+    \noindent\rule{\textwidth}{.5mm}
 
     % ==================================================================================================================
     % PROFILE AND OBJECTIVE
@@ -42,13 +49,9 @@
 
     \bigskip
 
-    \noindent{\large \bf Profile and objective}
-
-    \smallskip
-
     \noindent
-    Master of~Computer Science with~three years experience as~a~software developer, familiar with~many
-    technologies, wishing further development and~new challenges.
+    Software developer with~over three years experience, familiar with~many technologies, wishing further development
+    and~new challenges.
 
     % ==================================================================================================================
     % EXPERIENCE
@@ -56,30 +59,47 @@
 
     \bigskip
 
-    \noindent{\large \bf Experience}
+    \header{Experience}
 
     \smallskip
 
-    \noindent{\bf Grupa Wirtualna Polska S.A. -- iOS Developer \hfill December 2016 -- present}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-        \item Developing OpenFM application for~iOS with~TDD, RxSwift and~VIPER
+    {\bf Atos Polska S.A. -- Senior Software Developer (iOS) \hfill June 2017 -- present}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item Developing a~banking application for~iOS
+        \item Preparing trainings
+    \end{itemize}
+
+    \vspace{-.17cm}
+
+    {\bf Grupa Wirtualna Polska S.A. -- iOS Developer \hfill December 2016 -- May 2017}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item Developing a~music streaming application for~iOS with~TDD, RxSwift and~VIPER
         \item Developing API in~Python
     \end{itemize}
-    \vspace{-0.2cm}
-    \noindent{\bf Grupa Wirtualna Polska S.A. -- Junior iOS Developer \hfill September -- November 2016}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-        \item Developing applications (WP24 and WP SportoweFakty) for iOS
-        \item Developing API (in~Python) and configuring it on a test machine
+
+    \vspace{-.17cm}
+
+    {\bf Grupa Wirtualna Polska S.A. -- Junior iOS Developer \hfill September -- November 2016}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item Developing news applications for~iOS
+        \item Developing API in~Python and~configuring it on~a~test machine
     \end{itemize}
-    \vspace{-0.2cm}
-    \noindent{\bf AIC S.A. -- Software Developer \hfill April 2014 -- August 2016}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-        \item Development of~project called iProd, controlling automatic production line with~iPads
-        \item Developing mobile for~iOS, desktop for~Windows (WPF) and~web applications (AngularJS)
-        \item Creating REST APIs in~Python
+
+    \vspace{-.17cm}
+
+    {\bf AIC S.A. -- Software Developer \hfill April 2014 -- August 2016}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item Developing a~controlling automatic production line application and~other applications for~iOS
+        \item Developing desktop applications with~WPF and~web applications with~AngularJS
+        \item Developing APIs in~Python
     \end{itemize}
 
     % ==================================================================================================================
@@ -88,26 +108,33 @@
 
     \medskip
   
-    \noindent{\large \bf Education}
+    \header{Education}
   
     \smallskip
 
-    \noindent{{\bf University of Gdańsk}, Faculty of Mathematics, Physics and Informatics \hfill {\bf 2012 -- 2014}}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-        \item[ ] M.Sc in Computer Science degree (full-time studies)
+    {{\bf University of~Gdańsk}, Faculty of~Mathematics, Physics and~Informatics \hfill {\bf 2012 -- 2014}}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item[ ] M.Sc in~Computer Science degree (full-time studies)
     \end{itemize}
-    \vspace{-0.2cm}
-    \noindent{{\bf University of Warmia and Mazury}, Faculty of Mathematics and Computer Science
-    \hfill {\bf 2008 -- 2012}}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-        \item[ ] B.Eng in Computer Science degree (full-time studies)
+
+    \vspace{-.17cm}
+
+    {{\bf University of~Warmia and~Mazury}, Faculty of~Mathematics and~Computer Science
+        \hfill {\bf 2008 -- 2012}}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item[ ] B.Eng in~Computer Science degree (full-time studies)
     \end{itemize}
-    \vspace{-0.2cm}
-    \noindent{\bf High School No I in Mrągowo \hfill 2005 -- 2008}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+
+    \vspace{-.17cm}
+
+    {\bf High School No~I in~Mrągowo \hfill 2005 -- 2008}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
         \item[ ] Mathematics-Physics-Informatics
     \end{itemize}
 
@@ -117,96 +144,100 @@
 
     \medskip
 
-    \noindent{\large \bf Additional qualifications}
+    \header{Additional qualifications}
 
     \smallskip
 
-    \noindent{Autotesting | Bottega IT Solutions \hfill {\bf April 2015}}
+    {Autotesting | Bottega IT Solutions \hfill {\bf April 2015}}
 
-    \noindent{Craftsmanship, patterns and architecture for iOS developers | Bottega IT Solutions
-    \hfill {\bf October 2014}}
-  
+    {Craftsmanship, patterns and~architecture for~iOS developers | Bottega IT Solutions \hfill {\bf October 2014}}
+
     % ==================================================================================================================
     % TECHNICAL SKILLS
     % ==================================================================================================================
 
     \bigskip
 
-    \noindent{\large \bf Technical skills}
+    \header{Technical skills}
 
     % Programming/markup languages
 
     \smallskip
 
-    \noindent{\bf Programming/markup languages}
+    {\bf Programming/markup languages}
 
     \smallskip
-    $\bullet$ {\bf C\texttt{\#}}
-    \hspace{0.34cm}
-    $\bullet$ {\bf C\texttt{++}}
-    \hspace{0.34cm}
-    $\circ$ HTML \& CSS
-    \hspace{0.34cm}
-    $\circ$ JavaScript
-    \hspace{0.34cm}
-    $\bullet$ {\bf Objective-C}
-    \hspace{0.34cm}
-    $\bullet$ {\bf Python}
-    \hspace{0.34cm}
-    $\bullet$ {\bf Swift}
-    \hspace{0.34cm}
-    $\circ$ TeX
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}C\texttt{\#}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}C\texttt{++}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}HTML \& CSS
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}JavaScript
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Objective-C}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Python
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Swift}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}TeX
 
     % Graphics software
 
     \smallskip
 
-    \noindent{\bf Graphics software}
+    {\bf Graphics software}
 
     \smallskip
-    $\circ$ Blender
-    \hspace{0.34cm}
-    $\bullet$ {\bf Gimp}
-    \hspace{0.34cm}
-    $\bullet$ {\bf Inkscape}
-    \hspace{0.34cm}
-    $\circ$ Sketch
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}Blender
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Gimp}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Inkscape}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Sketch
 
     % Others
 
     \smallskip
 
-    \noindent{\bf Others}
+    {\bf Others}
 
     \smallskip
-    $\circ$ AngularJS
-    \hspace{0.34cm}
-    $\circ$ CUDA
-    \hspace{0.34cm}
-    $\circ$ Confluence
-    \hspace{0.34cm}
-    $\circ$ Crucible
-    \hspace{0.34cm}
-    $\bullet$ {\bf Flask}
-    \hspace{0.34cm}
-    $\bullet$ {\bf Git}
-    \hspace{0.34cm}
-    $\circ$ JIRA
-    \hspace{0.34cm}
-    $\circ$ Jenkins
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}AngularJS
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Autotesting}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}CUDA
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Confluence
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Crucible
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Flask
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Git}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}JIRA
 
-    \vspace{0.04cm}
-    $\circ$ MySQL \& MS SQL
-    \hspace{0.34cm}
-    $\circ$ Redmine
-    \hspace{0.34cm}
-    $\circ$ SDL
-    \hspace{0.34cm}
-    $\circ$ Scrum
-    \hspace{0.34cm}
-    $\bullet$ {\bf Autotesting}
-    \hspace{0.34cm}
-    $\bullet$ {\bf WPF}
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}Jenkins
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}MySQL \& MS SQL
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Redmine
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Rx
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}SDL
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Scrum
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}WPF
 
     % ==================================================================================================================
     % INTERESTS AND HOBBIES
@@ -214,16 +245,17 @@
 
     \bigskip
 
-    \noindent{\large \bf Interests and hobbies}
+    \header{Interests and~hobbies}
 
     \smallskip
-    $\bullet$ Computer graphics
-    \hspace{0.34cm}
-    $\bullet$ Drawing and painting
-    \hspace{0.34cm}
-    $\bullet$ Game development
-    \hspace{0.34cm}
-    $\bullet$ Powerlifting
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}Computer graphics
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Drawing and~painting
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Game development
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Powerlifting
 
     % ==================================================================================================================
     % MISCELLANEOUS
@@ -231,20 +263,22 @@
 
     \bigskip
 
-    \noindent{\large \bf Miscellaneous}
+    \header{Miscellaneous}
 
     \smallskip
-    $\bullet$ English B2 (Upper-Intermediate)
-    \hspace{0.34cm}
-    $\bullet$ Driving licence B
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}English: intermediate (reading and~writing), basic (speaking)
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Driving licence B
 
     % ==================================================================================================================
     % CLAUSE
     % ==================================================================================================================
 
-    \vspace{1cm}
+    \bigskip
 
-    \noindent \textit{''I~hereby give consent for~my personal data to~be processed for~the~purposes of~recruitment,
-    in~accordance with~the~Personal Data Protection Act dated 29.08.1997 (uniform text: Journal of~Laws of~the~Republic
-    of~Poland 2002 No~101, item~926 with~further amendments).''}
+    \noindent\textit{\small
+        ''I~hereby give consent for~my personal data to~be processed for~the~purposes of~recruitment, in~accordance
+        with~the~Personal Data Protection Act dated 29.08.1997 (uniform text: Journal of~Laws of~the~Republic of~Poland
+        2002 No~101, item~926 with~further amendments).''}
 \end{document}
