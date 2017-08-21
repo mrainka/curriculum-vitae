@@ -1,250 +1,284 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage{geometry}
-\usepackage{graphicx, hyperref}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand*\header[1]{
+    \noindent\raisebox{.1cm}{\color{MidnightBlue}\rule{1.5cm}{.1cm}\hspace{.2cm}\raisebox{-.1cm}{\large\bf #1}}}
+
 \usepackage[export]{adjustbox}
 \usepackage[polish]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
 \usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
 
-\geometry{left=1.5cm, top=0.9cm, right=1.5cm, bottom=1.5cm}
+\geometry{left=1.5cm, top=.9cm, right=1.5cm, bottom=1.5cm}
 
-\hypersetup{colorlinks=true,urlcolor=blue}
+\hypersetup{colorlinks=true,urlcolor=RoyalBlue}
 
 \begin{document}
     \pagestyle{empty}
-  
+
     \begin{center}
         \begin{minipage}[b]{3cm}
-            \includegraphics[scale=0.28, right]{photo.png}
+            \includegraphics[scale=.28, right]{photo.png}
         \end{minipage}
-        \hspace{0.2cm}
-        \begin{minipage}[b]{7cm}
-            {\Large \sc Marcin Rainka}
-            \begin{description} \itemsep1pt \parskip0pt \parsep0pt
-                \item[Adres] Reymonta 15C/9, 80-290 Gdańsk
+        \hspace{.1cm}{\color{Gray}\rule{.5mm}{4cm}}\hspace{.38cm}
+        \raisebox{.3cm}{\begin{minipage}[b]{7cm}
+            {\LARGE\bf Marcin Rainka}
+            \begin{description} \itemsep.6mm \parskip0mm \parsep0mm
+                \item[Adres] \mbox{Reymonta 15C/9, 80-290 Gdańsk}
                 \item[Data urodzenia] 1 grudzień 1989
                 \item[Telefon] (+48) 505 464 392
                 \item[E-mail] \href{mailto:marcin.rainka@gmail.com}{marcin.rainka@gmail.com}
                 \item[LinkedIn] \href{https://linkedin.com/in/marcinrainka}{https://linkedin.com/in/marcinrainka}
             \end{description}
-        \end{minipage}
+        \end{minipage}}
     \end{center}
 
-    \vspace{-0.4cm}
+    \vspace{-.4cm}
 
-    \noindent\rule{\textwidth}{0.1mm}
-  
+    \noindent\rule{\textwidth}{.5mm}
+
     % ==================================================================================================================
-    % PROFIL I CEL
+    % PROFILE AND OBJECTIVE
     % ==================================================================================================================
-  
+
     \bigskip
-
-    \noindent{\large \bf Profil i cel}
-  
-    \smallskip
 
     \noindent
-    Magister inżynier informatyki z~3-letnim doświadczeniem na~stanowisku programisty, zaznajomiony z~wieloma
-    technologiami, pragnący dalszego rozwoju oraz~nowych wyzwań.
-  
+    Programista z~ponad 3-letnim doświadczeniem, zaznajomiony z~wieloma technologiami, pragnący dalszego rozwoju
+    oraz~nowych wyzwań.
+
     % ==================================================================================================================
-    % DOŚWIADCZENIE ZAWODOWE
+    % EXPERIENCE
     % ==================================================================================================================
 
     \bigskip
 
-    \noindent{\large \bf Doświadczenie zawodowe}
+    \header{Doświadczenie zawodowe}
 
     \smallskip
 
-    \noindent{\bf Grupa Wirtualna Polska S.A. -- iOS Developer \hfill grudzień 2016 -- do chwili obecnej}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-        \item Rozwój aplikacji OpenFM na~iOS metodą TDD z~wykorzystaniem RxSwift i wzorca VIPER
-        \item Rozwój API w~technologii Python
+    {\bf Atos Polska S.A. -- St. Programista Systemów Informatycznych (iOS) \hfill czerwiec 2017 -- obecnie}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item Rozwój aplikacji bankowej na~iOS
+        \item Prowadzenie szkoleń
     \end{itemize}
-    \vspace{-0.2cm}
-    \noindent{\bf Grupa Wirtualna Polska S.A. -- Junior iOS Developer \hfill wrzesień -- listopad 2016}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-        \item Rozwój aplikacji WP24 i~WP~SportoweFakty na~iOS
-        \item Rozwój API (w~technologii Python) i~jego~konfiguracja na~maszynie testowej
+
+    \vspace{-.17cm}
+
+    {\bf Grupa Wirtualna Polska S.A. -- iOS Developer \hfill grudzień 2016 -- maj 2017}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item Rozwój aplikacji strumieniującej muzykę na~iOS metodą TDD, z~użyciem RxSwift i~wzorca VIPER
+        \item Rozwój API w~języku Python
     \end{itemize}
-    \vspace{-0.2cm}
-    \noindent{\bf AIC S.A. -- Programista \hfill kwiecień 2014 -- sierpień 2016}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-        \item Rozwój projektu~iProd, kontrolującego pracę automatycznej linii produkcyjnej poprzez~iPady
-        \item Tworzenie aplikacji mobilnych na~iOS, desktopowych na~Windows (WPF) i~webowych (AngularJS)
-        \item Tworzenie RESTowych API w~technologii Python
+
+    \vspace{-.17cm}
+
+    {\bf Grupa Wirtualna Polska S.A. -- Junior iOS Developer \hfill wrzesień -- listopad 2016}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item Rozwój aplikacji informacyjnych na~iOS
+        \item Rozwój API w~języku Python i~jego konfiguracja na~maszynie testowej
+    \end{itemize}
+
+    \vspace{-.17cm}
+
+    {\bf AIC S.A. -- Programista \hfill kwiecień 2014 -- sierpień 2016}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item Rozwój aplikacji kontrolującej pracę automatycznej linii produkcyjnej i~innych aplikacji na~iOS
+        \item Rozwój aplikacji desktopowych w~WPF i~webowych w~AngularJS
+        \item Rozwój API w~języku Python
     \end{itemize}
 
     % ==================================================================================================================
-    % EDUKACJA
+    % EDUCATION
     % ==================================================================================================================
 
     \medskip
   
-    \noindent{\large \bf Edukacja}
+    \header{Edukacja}
   
     \smallskip
 
-    \noindent{{\bf Uniwersytet Gdański}, Wydział Matematyki, Fizyki i Informatyki \hfill {\bf 2012 -- 2014}}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-        \item[ ] Studia magisterskie na kierunku Informatyka (tryb dzienny)
+    {{\bf Uniwersytet Gdański}, Wydział Matematyki, Fizyki i~Informatyki \hfill {\bf 2012 -- 2014}}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item[ ] Studia magisterskie na~kierunku Informatyka (tryb dzienny)
     \end{itemize}
-    \vspace{-0.2cm}
-    \noindent{{\bf Uniwersytet Warmińsko-Mazurski w Olsztynie}, Wydział Matematyki i Informatyki
-    \hfill {\bf 2008 -- 2012}}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-        \item[ ] Studia inżynierskie na kierunku Informatyka (tryb dzienny)
+
+    \vspace{-.17cm}
+
+    {{\bf Uniwersytet Warmińsko-Mazurski w~Olsztynie}, Wydział Matematyki i~Informatyki
+        \hfill {\bf 2008 -- 2012}}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item[ ] Studia inżynierskie na~kierunku Informatyka (tryb dzienny)
     \end{itemize}
-    \vspace{-0.2cm}
-    \noindent{\bf Liceum Ogólnokształcące nr 1 w Mrągowie \hfill 2005 -- 2008}
-    \vspace{-0.2cm}
-    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+
+    \vspace{-.17cm}
+
+    {\bf Liceum Ogólnokształcące nr~1 w~Mrągowie \hfill 2005 -- 2008}
+
+    \vspace{-.23cm}
+    \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
         \item[ ] Matematyka, Fizyka, Informatyka
     \end{itemize}
 
     % ==================================================================================================================
-    % KURSY
+    % COURSES
     % ==================================================================================================================
 
     \medskip
 
-    \noindent{\large \bf Dodatkowe kwalifikacje}
+    \header{Dodatkowe kwalifikacje}
 
     \smallskip
 
-    \noindent{Testowanie automatyczne | Bottega IT Solutions \hfill {\bf kwiecień 2015}}
+    {Testowanie automatyczne | Bottega IT Solutions \hfill {\bf kwiecień 2015}}
 
-    \noindent{Craftsmanship, wzorce i architektura dla programistów iOS | Bottega IT Solutions
-    \hfill {\bf październik 2014}}
-  
+    {Craftsmanship, wzorce i~architektura dla~programistów~iOS | Bottega IT Solutions \hfill {\bf październik 2014}}
+
     % ==================================================================================================================
-    % UMIEJĘTNOŚCI TECHNICZNE
+    % TECHNICAL SKILLS
+    % ==================================================================================================================
+
+    \bigskip
+
+    \header{Umiejętności techniczne}
+
+    % Programming/markup languages
+
+    \smallskip
+
+    {\bf Języki programowania/znaczników}
+
+    \smallskip
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}C\texttt{\#}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}C\texttt{++}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}HTML i CSS
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}JavaScript
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Objective-C}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Python
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Swift}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}TeX
+
+    % Graphics software
+
+    \smallskip
+
+    {\bf Programy graficzne}
+
+    \smallskip
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}Blender
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Gimp}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Inkscape}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Sketch
+
+    % Others
+
+    \smallskip
+
+    {\bf Pozostałe}
+
+    \smallskip
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}AngularJS
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Autotesting}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}CUDA
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Confluence
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Crucible
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Flask
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Git}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}JIRA
+
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}Jenkins
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}MySQL i MS SQL
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Redmine
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Rx
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}SDL
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Scrum
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}WPF
+
+    % ==================================================================================================================
+    % INTERESTS AND HOBBIES
     % ==================================================================================================================
 
     \bigskip
 
-    \noindent{\large \bf Umiejętności techniczne}
-  
-    % Języki programowania/znaczników
-  
-    \smallskip
-
-    \noindent{\bf Języki programowania/znaczników}
+    \header{Zainteresowania i~hobby}
 
     \smallskip
-    $\bullet$ {\bf C\texttt{\#}}
-    \hspace{0.34cm}
-    $\bullet$ {\bf C\texttt{++}}
-    \hspace{0.34cm}
-    $\circ$ HTML i CSS
-    \hspace{0.34cm}
-    $\circ$ JavaScript
-    \hspace{0.34cm}
-    $\bullet$ {\bf Objective-C}
-    \hspace{0.34cm}
-    $\bullet$ {\bf Python}
-    \hspace{0.34cm}
-    $\bullet$ {\bf Swift}
-    \hspace{0.34cm}
-    $\circ$ TeX
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}Grafika komputerowa
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Rysunek i~malarstwo
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Trójbój siłowy
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Tworzenie gier komputerowych
 
-    % Programy graficzne
-
-    \smallskip
-
-    \noindent{\bf Programy graficzne}
-
-    \smallskip
-    $\circ$ Blender
-    \hspace{0.34cm}
-    $\bullet$ {\bf Gimp}
-    \hspace{0.34cm}
-    $\bullet$ {\bf Inkscape}
-    \hspace{0.34cm}
-    $\circ$ Sketch
-
-    % Pozostałe
-
-    \smallskip
-
-    \noindent{\bf Pozostałe}
-
-    \smallskip
-    $\circ$ AngularJS
-    \hspace{0.34cm}
-    $\circ$ CUDA
-    \hspace{0.34cm}
-    $\circ$ Confluence
-    \hspace{0.34cm}
-    $\circ$ Crucible
-    \hspace{0.34cm}
-    $\bullet$ {\bf Flask}
-    \hspace{0.34cm}
-    $\bullet$ {\bf Git}
-    \hspace{0.34cm}
-    $\circ$ JIRA
-    \hspace{0.34cm}
-    $\circ$ Jenkins
-
-    \vspace{0.04cm}
-    $\circ$ MySQL i MS SQL
-    \hspace{0.34cm}
-    $\circ$ Redmine
-    \hspace{0.34cm}
-    $\circ$ SDL
-    \hspace{0.34cm}
-    $\circ$ Scrum
-    \hspace{0.34cm}
-    $\bullet$ {\bf Testowanie automatyczne}
-    \hspace{0.34cm}
-    $\bullet$ {\bf WPF}
-  
     % ==================================================================================================================
-    % ZAINTERESOWANIA I HOBBY
+    % MISCELLANEOUS
     % ==================================================================================================================
 
     \bigskip
-  
-    \noindent{\large \bf Zainteresowania i hobby}
-  
+
+    \header{Inne}
+
     \smallskip
-    $\bullet$ Grafika komputerowa
-    \hspace{0.34cm}
-    $\bullet$ Rysunek i malarstwo
-    \hspace{0.34cm}
-    $\bullet$ Tworzenie gier komputerowych
-    \hspace{0.34cm}
-    $\bullet$ Trójbój siłowy
-  
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}Angielski: średnio zaawansowany (czytanie i~pisanie), podstawowy (mówienie)
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Prawo jazdy kat. B
+
     % ==================================================================================================================
-    % INNE
+    % CLAUSE
     % ==================================================================================================================
 
     \bigskip
-  
-    \noindent{\large \bf Inne}
-  
-    \smallskip
-    $\bullet$ Język angielski na poziomie B2 (średnio-zaawansowany)
-    \hspace{0.34cm}
-    $\bullet$ Prawo jazdy kategorii B
-  
-    % ==================================================================================================================
-    % KLAUZULA
-    % ==================================================================================================================
 
-    \vspace{1cm}
-  
-    \noindent \textit{,,Wyrażam zgodę na~przetwarzanie moich danych osobowych dla~potrzeb niezbędnych do~realizacji
-    procesu rekrutacji (zgodnie z~Ustawą z~dnia 29.08.1997 roku o~Ochronie Danych Osobowych; tekst jednolity: Dz. U.
-    z~2002r. Nr~101, poz.~926 ze~zm.).''}
+    \noindent\textit{\small
+        ''Wyrażam zgodę na~przetwarzanie moich danych osobowych dla~potrzeb niezbędnych do~realizacji procesu rekrutacji
+        (zgodnie z~Ustawą z~dnia 29 sierpnia 1997 roku o~Ochronie Danych Osobowych; tekst jednolity: Dziennik Ustaw 2016
+        rok pozycja~922).''}
 \end{document}
