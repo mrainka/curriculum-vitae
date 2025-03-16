@@ -3,7 +3,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 
 \newcommand*\header[1]{
-    \noindent\raisebox{.1cm}{\color{MidnightBlue}\rule{1.5cm}{.1cm}\hspace{.2cm}\raisebox{-.1cm}{\large\bf #1}}}
+    \noindent\raisebox{.1cm}{\color{MidnightBlue}\rule{1.5cm}{.05cm}\hspace{.2cm}\raisebox{-.1cm}{\large\bf #1}}}
 
 \usepackage[export]{adjustbox}
 \usepackage[english]{babel}
@@ -15,7 +15,7 @@
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 
-\geometry{left=2cm, top=2cm, right=2cm, bottom=2cm}
+\geometry{left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm}
 
 \hypersetup{colorlinks=true,urlcolor=RoyalBlue}
 
@@ -24,20 +24,19 @@
 
     \begin{center}
         \begin{minipage}[b]{3cm}
-            \includegraphics[scale=.048, right]{photo.png}
+            \includegraphics[scale=.04, right]{photo.png}
         \end{minipage}
-        \hspace{.05cm}{\color{Gray}\rule{.2mm}{2.94cm}}\hspace{.05cm}
+        \hspace{.05cm}{\color{Gray}\rule{.2mm}{2.44cm}}\hspace{.05cm}
         \raisebox{0cm}{\begin{minipage}[b]{8cm}
             {\Large\bf Marcin Rainka}
 
             \vspace{-.3cm}
 
             \begin{description} \itemsep.2mm \parskip0mm \parsep0mm
-                \item[Address] \mbox{Torowa 1/3, 11-700 Mrągowo}
-                \item[Date of birth] 1st December 1989
                 \item[Phone number] (+48) 505 464 392
                 \item[E-mail] \href{mailto:marcin.rainka@gmail.com}{marcin.rainka@gmail.com}
                 \item[LinkedIn] \href{https://linkedin.com/in/marcinrainka}{https://linkedin.com/in/marcinrainka}
+                \item[Address] \mbox{Torowa 1/3, 11-700 Mrągowo}
             \end{description}
         \end{minipage}}
     \end{center}
@@ -53,8 +52,8 @@
     \bigskip
 
     \noindent
-    Experienced iOS~developer, familiar with~many technologies, always~trying to~do his~best and~take care
-    of~every~detail.
+    Experienced iOS~developer, familiar with~many technologies, always~trying to~do his~best and~take care \\
+    of~every~important~detail.
 
     % ==================================================================================================================
     % EXPERIENCE
@@ -70,7 +69,23 @@
 
     \vspace{-.23cm}
     \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
+        \item Independent implementation of~a~chat logic based on WebSocket
         \item Working on a~well-being platform aggregating selected services
+
+        \vspace{0.1cm}
+        \setlength\itemindent{-1em}
+        \item[] {\small{\color{CadetBlue}{\bf Tech stack:}}
+            Swift,
+            SwiftUI,
+            UIKit,
+            Combine,
+            Swift Concurrency,
+            Swift Testing,
+            Snapshot Testing, \\
+            WebSocket (Starscream),
+            Contentful,
+            GitLab CI/CD
+        }
     \end{itemize}
 
     \vspace{-.17cm}
@@ -80,6 +95,15 @@
     \vspace{-.23cm}
     \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
         \item Developing VoIP~systems for~the~regulated finance industry
+
+        \vspace{0.1cm}
+        \setlength\itemindent{-1em}
+        \item[] {\small{\color{CadetBlue}{\bf Tech stack:}}
+            Swift,
+            SwiftUI,
+            UIKit,
+            Combine
+        }
     \end{itemize}
 
     \vspace{-.17cm}
@@ -88,8 +112,22 @@
 
     \vspace{-.23cm}
     \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
-        \item Developing patient health monitoring applications
+        \item Developing patient health monitoring applications where users complete daily tasks
+            (memory mini-games, motion-based phone interactions, etc.)
         \item Developing a~vehicle tracking application that~allows you to~pay for~the~ride
+
+        \vspace{0.1cm}
+        \setlength\itemindent{-1em}
+        \item[] {\small{\color{CadetBlue}{\bf Tech stack:}}
+            Swift,
+            SwiftUI,
+            UIKit,
+            Combine,
+            RxSwift,
+            Tuist,
+            Bitrise CI/CD,
+            GitLab CI/CD
+        }
     \end{itemize}
 
     \vspace{-.17cm}
@@ -98,8 +136,20 @@
 
     \vspace{-.23cm}
     \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
-        \item Developing a~news application for~iOS in~Swift from~scratch and~on~my~own
+        \item Independent implementation of~a~news application for~iOS in~Swift from~scratch,
+            with~functionality for~users to~send notifications with~media attachments
         \item Simultaneous maintenance of~a~news application for~iOS written in~Objective-C
+
+        \vspace{0.1cm}
+        \setlength\itemindent{-1em}
+        \item[] {\small{\color{CadetBlue}{\bf Tech stack:}}
+            Swift,
+            Objective-C,
+            UIKit,
+            RxSwift,
+            Quick/Nimble,
+            JavaScript injection
+        }
     \end{itemize}
 
     \vspace{-.17cm}
@@ -110,6 +160,13 @@
     \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
         \item Developing a~banking application for~iOS
         \item Preparing trainings
+
+        \vspace{0.1cm}
+        \setlength\itemindent{-1em}
+        \item[] {\small{\color{CadetBlue}{\bf Tech stack:}}
+            Objective-C,
+            UIKit
+        }
     \end{itemize}
 
     \vspace{-.17cm}
@@ -121,6 +178,15 @@
         \item Developing news applications for~iOS
         \item Developing a~music streaming application for~iOS with~TDD, RxSwift and~VIPER
         \item Developing API in~Python
+
+        \vspace{0.1cm}
+        \setlength\itemindent{-1em}
+        \item[] {\small{\color{CadetBlue}{\bf Tech stack:}}
+            Swift,
+            UIKit,
+            RxSwift,
+            Python
+        }
     \end{itemize}
 
     \vspace{-.17cm}
@@ -130,15 +196,32 @@
     \vspace{-.23cm}
     \begin{itemize}[leftmargin=1.5cm] \itemsep.2mm \parskip0mm \parsep0mm
         \item Developing an~application controlling an~automatic production line and~other applications for~iOS
-        \item Developing desktop applications with~WPF and~web applications with~AngularJS
+        \item Developing desktop applications for~machine communication with~WPF and~web applications \\
+            with~AngularJS
         \item Developing APIs in~Python
+
+        \vspace{0.1cm}
+        \setlength\itemindent{-1em}
+        \item[] {\small{\color{CadetBlue}{\bf Tech stack:}}
+            Objective-C,
+            UIKit,
+            C\texttt{\#},
+            WPF,
+            Python,
+            Flask,
+            AngularJS,
+            MySQL,
+            MS SQL,
+            Redmine,
+            Jenkins
+        }
     \end{itemize}
 
     % ==================================================================================================================
     % EDUCATION
     % ==================================================================================================================
 
-    \medskip
+    \pagebreak
   
     \header{Education}
   
@@ -190,7 +273,7 @@
     % TECHNICAL SKILLS
     % ==================================================================================================================
 
-    \pagebreak
+    \bigskip
 
     \header{Technical skills}
 
@@ -202,9 +285,9 @@
 
     \medskip
     \hspace{.4cm}
-    $\circ$\hspace{.18cm}{\bf Objective-C}
-    \hspace{.32cm}
     $\circ$\hspace{.18cm}{\bf Swift}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Objective-C}
     \hspace{.32cm}
     $\circ$\hspace{.18cm}C\texttt{\#}
     \hspace{.32cm}
@@ -241,39 +324,69 @@
 
     \medskip
     \hspace{.4cm}
+    $\circ$\hspace{.18cm}{\bf SwiftUI}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf UIKit}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Combine}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Swift Concurrency}
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}{\bf Swift Package Manager}
+
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}{\bf CocoaPods}
+    \hspace{.32cm}
     $\circ$\hspace{.18cm}{\bf Autotesting}
     \hspace{.32cm}
     $\circ$\hspace{.18cm}{\bf Git}
     \hspace{.32cm}
-    $\circ$\hspace{.18cm}{\bf Rx}
+    $\circ$\hspace{.18cm}Swift Testing
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Snapshot Testing
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Quick/Nimble
+
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}WebSocket (Starscream)
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}RxSwift
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Tuist
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Contentful
     \hspace{.32cm}
     $\circ$\hspace{.18cm}AngularJS
     \hspace{.32cm}
     $\circ$\hspace{.18cm}CUDA
     \hspace{.32cm}
-    $\circ$\hspace{.18cm}Confluence
-    \hspace{.32cm}
-    $\circ$\hspace{.18cm}Crucible
+    $\circ$\hspace{.18cm}Flask
 
     \hspace{.4cm}
-    $\circ$\hspace{.18cm}Flask
-    \hspace{.32cm}
-    $\circ$\hspace{.18cm}JIRA
-    \hspace{.32cm}
-    $\circ$\hspace{.18cm}Jenkins
-    \hspace{.32cm}
-    $\circ$\hspace{.18cm}MySQL \& MS SQL
-    \hspace{.32cm}
-    $\circ$\hspace{.18cm}Contentful
-    \hspace{.32cm}
     $\circ$\hspace{.18cm}Redmine
     \hspace{.32cm}
     $\circ$\hspace{.18cm}SDL
-
-    \hspace{.4cm}
-    $\circ$\hspace{.18cm}Scrum
     \hspace{.32cm}
     $\circ$\hspace{.18cm}WPF
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}MySQL \& MS SQL
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Confluence
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Crucible
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Scrum
+
+    \hspace{.4cm}
+    $\circ$\hspace{.18cm}JIRA
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}ClickUp
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Bitrise CI/CD
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}GitLab CI/CD
+    \hspace{.32cm}
+    $\circ$\hspace{.18cm}Jenkins
 
     % ==================================================================================================================
     % INTERESTS AND HOBBIES
